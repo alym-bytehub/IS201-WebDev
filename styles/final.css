@@ -1,0 +1,114 @@
+/* Reset & base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #ffeef5;
+    font-family: 'Segoe UI', sans-serif;
+    color: #4a2c2c;
+    padding: 1rem;
+  }
+  
+  /* Layout Divs */
+  .header, .content, .footer {
+    margin: 1.5rem auto;
+    padding: 2rem;
+    border-radius: 16px;
+    max-width: 1000px;
+    background-color: white;
+    box-shadow: 0 6px 20px rgba(255, 192, 203, 0.3);
+  }
+
+  .trip-pix-link {
+    color: #ff69b4; /* bright and readable pink */
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .trip-pix-link:hover {
+    color: #d63384; /* a slightly deeper pink on hover */
+  }
+  
+  
+  /* Header */
+  .header {
+    background: linear-gradient(90deg, #ffb6c1, #ffc0cb);
+    text-align: center;
+    color: #fff;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Content */
+  .content {
+    text-align: center;
+  }
+  
+  .content h2 {
+    color: #d63384;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+  }
+  
+  .content ol.center {
+    display: inline-block;
+    text-align: left;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .content li.emphasize {
+    font-weight: bold;
+    color: #e75480;
+  }
+  
+  .content img {
+    width: 300px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(255, 182, 193, 0.5);
+  }
+  
+  .content iframe {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 12px;
+  }
+  
+  /* Special Link Styling */
+  .content a {
+    color: #c71585; /* Bright magenta pink */
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    background-color: #ffe4ec;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #a64b6f;
+  }
+  
+  .footer a {
+    color: #e75480;
+    text-decoration: none;
+  }
+  

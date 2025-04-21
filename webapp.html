@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Adventure Game!</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #ffeef8;
+      text-align: center;
+      padding: 3rem;
+      color: #a8326f;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #ff66b2;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #ff80bf;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff0f6;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+      background-color: #ffb6d9;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 8px;
+      margin: 10px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #f57f9f;
+    }
+
+    #result {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      color: #e75480;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Travel Adventure Game!</h1>
+    <h2>Pick a region and get a travel suggestion!</h2>
+    <button onclick="suggestDestination('Asia')">Asia</button>
+    <button onclick="suggestDestination('Europe')">Europe</button>
+    <button onclick="suggestDestination('Africa')">Africa</button>
+    <button onclick="suggestDestination('North America')">North America</button>
+    <button onclick="suggestDestination('South America')">South America</button>
+    <button onclick="suggestDestination('Oceania')">Oceania</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script>
+    const destinations = {
+      'Asia': ['Vietnam', 'Japan', 'Thailand', 'Indonesia', 'South Korea'],
+      'Europe': ['France', 'Italy', 'Spain', 'Portugal', 'Greece'],
+      'Africa': ['Morocco', 'South Africa', 'Egypt', 'Kenya', 'Tanzania'],
+      'North America': ['USA', 'Canada', 'Mexico', 'Costa Rica', 'Cuba'],
+      'South America': ['Brazil', 'Argentina', 'Peru', 'Colombia', 'Chile'],
+      'Oceania': ['Australia', 'New Zealand', 'Fiji', 'Papua New Guinea', 'Samoa']
+    };
+
+    function suggestDestination(region) {
+      const places = destinations[region];
+      const randomPlace = places[Math.floor(Math.random() * places.length)];
+      const resultElement = document.getElementById('result');
+      resultElement.innerHTML = `<p>You should travel to <strong>${randomPlace}</strong> in <strong>${region}</strong>! ✈️</p>`;
+    }
+  </script>
+</body>
+</html>

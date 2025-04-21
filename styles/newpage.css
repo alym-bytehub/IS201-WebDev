@@ -1,0 +1,52 @@
+.common{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header{
+    height: 100px;
+    background-color: deeppink;
+    color: white;
+    line-height: 100px;
+}
+
+.mainbody{
+    background-color: rgb(255, 192, 225);
+    color: white;
+}
+
+.footer{
+    background-color: rgb(146, 18, 86);
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    left: 8px;
+    right: 8px;
+    height: 25px;
+    padding-top: 15px;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+nav{
+    background-color: rgb(208, 129, 171);
+    padding: 10px;
+    overflow: hidden;
+}
+
+nav a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 204, 231);
+    padding: 20px;
+}
+
+nav a:hover{
+    background-color: rgb(180, 111, 148);
+}
